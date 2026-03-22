@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Under Construction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;  /* horizontal center */
+            align-items: center;      /* vertical center */
+            background-color: #0f0f0f;
+        }
+
+        .marquee-container {
+            width: 80%;
+            overflow: hidden;
+            background-color: #111;
+            color: #fff;
+            padding: 15px 0;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: scrollText 13s linear infinite; /* slowed ~30% */
+            font-size: 20px;
+        }
+
+        @keyframes scrollText {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="marquee-container">
+    <div class="marquee-text">
+        🚧 This portfolio site is currently under construction 🚧
+    </div>
+</div>
+
+</body>
+</html>
